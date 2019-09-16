@@ -21,3 +21,5 @@ class EnemyTeam(Team):
     def def_action(self, info: GameInfo, state: State) -> int:
         direction = (state.ball_pos.y - state.mine_team.def_pos.y) > 0
         return info.def_return_limit if direction else -info.def_return_limit
+
+
